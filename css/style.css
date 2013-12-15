@@ -1,3 +1,20 @@
+@font-face {
+    font-family: 'abraham_lincolnregular';
+    src: url('../fonts/abrahamlincoln-webfont.eot');
+    src: url('../fonts/abrahamlincoln-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/abrahamlincoln-webfont.woff') format('woff'),
+         url('../fonts/abrahamlincoln-webfont.ttf') format('truetype'),
+         url('../fonts/abrahamlincoln-webfont.svg#abraham_lincolnregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  font-family: 'abraham_lincolnregular';
+}
+
+
 .backdrop {
   position: fixed;
   width: 100%;
@@ -6,5 +23,26 @@
   left: 0px;
 }
 #title {
-  
+  background: url('../img/background-title.jpg') bottom center no-repeat;
+  background-size: cover;
+}
+
+#titleImg {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  width: 400px;
+  height: 470px;
+  margin-left: -200px;
+
+  background: url('../img/title-img.png') top center no-repeat transparent;
+
+  text-align: center;
+}
+
+#titleImg > h1 {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
 }
