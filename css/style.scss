@@ -259,16 +259,38 @@ h1#weddingParty {
 }
 .weddingParty-member {
   width: 532px;
+  height: 330px;
+  overflow: hidden;
   background: {
-    image: url('../img/wedding-party-back.png');
+    image: url('../img/weddingparty-back.png');
     repeat: no-repeat;
     color: transparent;
   }
   position: relative;
-  margin-bottom: 30px;
 
-  > img {
-    width: 200px;    
+  > .weddingParty-photo {
+    width: 200px;
+    height: 200px;
+    background: {
+      image: url('../img/weddingparty-spritesheet.jpg');
+      repeat: no-repeat;
+      color: black;
+    };
+
+    $wp-top: 0px;
+    @each $member in breezy, faye, rachel, mackenzie, brittany, nicole {    
+      &##{$member} {
+        background-position: 0px $wp-top;
+      }
+      $wp-top: $wp-top - 200;
+    }
+    $wp-top: 0px;
+    @each $member in jonathan, rylan, brett, dan, garrett, ryan {    
+      &##{$member} {
+        background-position: -200px $wp-top;
+      }
+      $wp-top: $wp-top - 200;
+    }    
   }
   > h3 {
     font-size: 38px;
@@ -276,16 +298,16 @@ h1#weddingParty {
 
   &.left {
     background-position: top right;
-    > img {
+    > .weddingParty-photo {
       float: left;
-      margin: 8px 20px 20px 8px;
+      margin: 8px 20px 10px 8px;
     }
   }
   &.right {
     background-position: top left;
-    > img {
+    > .weddingParty-photo {
       float: right;
-      margin: 8px 8px 20px 20px;
+      margin: 8px 8px 10px 20px;
     }
   }
 }

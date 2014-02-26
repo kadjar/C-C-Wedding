@@ -197,22 +197,51 @@ h1#weddingParty {
 
 .weddingParty-member {
   width: 532px;
-  background-image: url("../img/wedding-party-back.png");
+  height: 330px;
+  overflow: hidden;
+  background-image: url("../img/weddingparty-back.png");
   background-repeat: no-repeat;
   background-color: transparent;
-  position: relative;
-  margin-bottom: 30px; }
-  .weddingParty-member > img {
-    width: 200px; }
+  position: relative; }
+  .weddingParty-member > .weddingParty-photo {
+    width: 200px;
+    height: 200px;
+    background-image: url("../img/weddingparty-spritesheet.jpg");
+    background-repeat: no-repeat;
+    background-color: black; }
+    .weddingParty-member > .weddingParty-photo#breezy {
+      background-position: 0px 0px; }
+    .weddingParty-member > .weddingParty-photo#faye {
+      background-position: 0px -200px; }
+    .weddingParty-member > .weddingParty-photo#rachel {
+      background-position: 0px -400px; }
+    .weddingParty-member > .weddingParty-photo#mackenzie {
+      background-position: 0px -600px; }
+    .weddingParty-member > .weddingParty-photo#brittany {
+      background-position: 0px -800px; }
+    .weddingParty-member > .weddingParty-photo#nicole {
+      background-position: 0px -1000px; }
+    .weddingParty-member > .weddingParty-photo#jonathan {
+      background-position: -200px 0px; }
+    .weddingParty-member > .weddingParty-photo#rylan {
+      background-position: -200px -200px; }
+    .weddingParty-member > .weddingParty-photo#brett {
+      background-position: -200px -400px; }
+    .weddingParty-member > .weddingParty-photo#dan {
+      background-position: -200px -600px; }
+    .weddingParty-member > .weddingParty-photo#garrett {
+      background-position: -200px -800px; }
+    .weddingParty-member > .weddingParty-photo#ryan {
+      background-position: -200px -1000px; }
   .weddingParty-member > h3 {
     font-size: 38px; }
   .weddingParty-member.left {
     background-position: top right; }
-    .weddingParty-member.left > img {
+    .weddingParty-member.left > .weddingParty-photo {
       float: left;
-      margin: 8px 20px 20px 8px; }
+      margin: 8px 20px 10px 8px; }
   .weddingParty-member.right {
     background-position: top left; }
-    .weddingParty-member.right > img {
+    .weddingParty-member.right > .weddingParty-photo {
       float: right;
-      margin: 8px 8px 20px 20px; }
+      margin: 8px 8px 10px 20px; }
