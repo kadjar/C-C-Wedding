@@ -25,7 +25,9 @@ $(document).ready(function() {
   Galleria.loadTheme('js/galleria/galleria.classic.min.js');
   Galleria.run('#photoGallery', {dataSource: galleryImages});
 
-  $('a.smooth').click(function() {
+  $('a.smooth').click(function(e) {
+    e.preventDefault();
+    
     var target = $(this.hash);
     target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
     if (target.length) {

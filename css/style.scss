@@ -24,11 +24,16 @@
 $headerfont: 'abraham_lincolnregular', 'Palatino Linotype', serif;
 $bodyfont: 'quaver_sansregular', sans-serif;
 $sepia: #fdebe0;
+$big-title: 130px;
 
 body {
   font-family: $bodyfont;  
   height: 100%;
   background: $sepia;
+}
+
+blockquote {
+  border: none;
 }
 
 .row {
@@ -47,6 +52,14 @@ body {
 
 #titleImg > h1 {
 font-size: 1.5em;
+}
+
+.relative {
+  position: relative;
+}
+
+.float-right {
+  float: right;
 }
 
 /* NAV */
@@ -193,11 +206,15 @@ p {
   background-size: cover;
 }
 
+#proposal-photo {
+  margin: 0px 0px 30px 30px;
+}
+
 /* Ceremony & Reception */
 
 #ceremonyTitle {
   text-align: center;
-  font-size: 130px;
+  font-size: $big-title;
   background: url('../img/title-frame-light.png') center center no-repeat transparent;
   height: 235px;
   line-height: 235px;
@@ -208,4 +225,67 @@ p {
 #ceremonyLocation {
   background: url('../img/filigree-side-frame.png') center center no-repeat transparent;
   padding: 0px 110px;
+  margin-bottom: 50px;
+}
+#ceremonyAddress {
+  padding-top: 30px;
+
+  > p {
+    font-family: $headerfont;
+    font-size: 24px;
+    margin-bottom: 0px;
+  }
+}
+
+/* wedding party */
+
+h1#weddingParty {
+  font-size: $big-title;
+  > img {
+    margin-bottom: 20px;
+  }
+}
+
+#weddingParty-cols {
+  height: 850px;
+}
+
+#weddingParty-centerline {
+  position: absolute;
+  width: 10px;
+  left: 50%;
+  margin-left: -5px;
+  top: 5px;
+}
+.weddingParty-member {
+  width: 532px;
+  background: {
+    image: url('../img/wedding-party-back.png');
+    repeat: no-repeat;
+    color: transparent;
+  }
+  position: relative;
+  margin-bottom: 30px;
+
+  > img {
+    width: 200px;    
+  }
+  > h3 {
+    font-size: 38px;
+  }
+
+  &.left {
+    background-position: top right;
+    > img {
+      float: left;
+      margin: 8px 20px 20px 8px;
+    }
+  }
+  &.right {
+    background-position: top left;
+    > img {
+      float: right;
+      margin: 8px 8px 20px 20px;
+    }
+  }
 }
