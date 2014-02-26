@@ -60,7 +60,7 @@ nav {
     top: 0px; }
 
 #nav {
-  padding: 0px;
+  padding: 0px 0px 0px 50px;
   margin: 0px;
   text-align: center;
   list-style: outside none;
@@ -151,7 +151,8 @@ p {
 #theProposal {
   padding-top: 50px;
   background: url("../img/background-proposal.jpg") top center no-repeat transparent;
-  background-size: cover; }
+  background-size: cover;
+  padding-bottom: 70px; }
 
 #proposal-photo {
   margin: 0px 0px 30px 30px; }
