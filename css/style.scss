@@ -24,6 +24,7 @@
 $headerfont: 'abraham_lincolnregular', 'Palatino Linotype', serif;
 $bodyfont: 'quaver_sansregular', sans-serif;
 $sepia: #fdebe0;
+$sepia-dk: #A08A7C;
 $big-title: 130px;
 
 body {
@@ -92,18 +93,30 @@ nav {
   list-style: outside none;
   background: #000;
 
+  @each $item in thecouple, theproposal, theceremony, theweddingparty, theregistries {
+    &.#{$item} {
+      > li##{$item}-li {
+        > a {
+          color: white;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
   > li {
     display: inline-block;
     padding: 10px 40px;
     font-size: 32px;
-
     > a {
       color: $sepia;
       text-decoration: none;
-      transition: color 300ms ease;
+      transition: all 300ms ease;
+      opacity: 0.7;
 
       &:hover {
         color: white;
+        opacity: 1;
       }
     }
   }
