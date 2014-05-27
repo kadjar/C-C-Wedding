@@ -110,6 +110,9 @@ nav {
   max-width: 100%;
   margin-bottom: 50px; }
 
+#bottom {
+  height: 100%; }
+
 /* Reuse */
 .lead-quote {
   color: #000;
@@ -263,3 +266,7 @@ h1#weddingParty {
     .weddingParty-member.right > .weddingParty-photo {
       float: right;
       margin: 8px 8px 10px 20px; }
+
+/* registries */
+#registries {
+  font-size: 130px; }

@@ -142,6 +142,10 @@ nav {
   margin-bottom: 50px;
 }
 
+#bottom {
+  height: 100%;
+}
+
 
 /* Reuse */
 .lead-quote {
@@ -324,4 +328,9 @@ h1#weddingParty {
       margin: 8px 8px 10px 20px;
     }
   }
+}
+
+/* registries */
+#registries {
+  font-size: $big-title;
 }

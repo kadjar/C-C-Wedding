@@ -44,7 +44,7 @@ $(document).ready(function() {
         dom.navList.addClass(el.attr('name'));
       }
       console.log(el.attr('name'));      
-    }, { offset: 100 });
+    }, { offset: 200 });
   });
 
   $('a.smooth').click(function(e) {
