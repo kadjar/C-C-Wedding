@@ -242,6 +242,8 @@ h1#weddingParty {
       background-position: 0px -800px; }
     .weddingParty-member > .weddingParty-photo#nicole {
       background-position: 0px -1000px; }
+    .weddingParty-member > .weddingParty-photo#kimberly {
+      background-position: 0px -1200px; }
     .weddingParty-member > .weddingParty-photo#jonathan {
       background-position: -200px 0px; }
     .weddingParty-member > .weddingParty-photo#rylan {
@@ -254,6 +256,8 @@ h1#weddingParty {
       background-position: -200px -800px; }
     .weddingParty-member > .weddingParty-photo#ryan {
       background-position: -200px -1000px; }
+    .weddingParty-member > .weddingParty-photo#brian {
+      background-position: -200px -1200px; }
   .weddingParty-member > h3 {
     font-size: 38px; }
   .weddingParty-member.left {

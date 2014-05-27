@@ -296,14 +296,14 @@ h1#weddingParty {
     };
 
     $wp-top: 0px;
-    @each $member in breezy, faye, rachel, mackenzie, brittany, nicole {    
+    @each $member in breezy, faye, rachel, mackenzie, brittany, nicole, kimberly {    
       &##{$member} {
         background-position: 0px $wp-top;
       }
       $wp-top: $wp-top - 200;
     }
     $wp-top: 0px;
-    @each $member in jonathan, rylan, brett, dan, garrett, ryan {    
+    @each $member in jonathan, rylan, brett, dan, garrett, ryan, brian {    
       &##{$member} {
         background-position: -200px $wp-top;
       }
